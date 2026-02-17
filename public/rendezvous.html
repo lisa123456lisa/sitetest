@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prenez rendez-vous en ligne avec la Clinique Élégance Esthétique à Hydra. Disponibilités en temps réel connectées à Google Calendar." />
+  <title>Prendre rendez-vous | Clinique Élégance Esthétique</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header><div class="container nav"><div class="logo">Clinique <span>Élégance Esthétique</span></div><nav aria-label="Navigation principale"><ul><li><a href="/index.html">Accueil</a></li><li><a href="/services.html">Nos services</a></li><li><a href="/a-propos.html">À propos</a></li><li><a class="active" href="/rendezvous.html">Prendre rendez-vous</a></li></ul></nav></div></header>
+<main class="container section">
+  <h1>Prendre rendez-vous</h1>
+  <p class="subtitle">Sélectionnez votre prestation, une date et un créneau disponible. Confirmation instantanée après validation.</p>
+
+  <form id="booking-form" aria-label="Formulaire de réservation">
+    <div class="form-grid">
+      <div>
+        <label for="service">Prestation *</label>
+        <select id="service" name="service" required></select>
+      </div>
+      <div>
+        <label for="date">Date souhaitée *</label>
+        <input id="date" name="date" type="date" required />
+      </div>
+      <div>
+        <label for="time">Créneau disponible *</label>
+        <select id="time" name="time" required><option value="">Sélectionnez d'abord une date</option></select>
+      </div>
+      <div>
+        <label for="lastName">Nom *</label>
+        <input id="lastName" name="lastName" type="text" required />
+      </div>
+      <div>
+        <label for="firstName">Prénom *</label>
+        <input id="firstName" name="firstName" type="text" required />
+      </div>
+      <div>
+        <label for="phone">Téléphone *</label>
+        <input id="phone" name="phone" type="tel" required />
+      </div>
+      <div>
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div style="grid-column:1/-1">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+    </div>
+    <button class="btn" type="submit">Confirmer le rendez-vous</button>
+    <p id="form-notice" class="notice" role="status" aria-live="polite"></p>
+  </form>
+</main>
+<footer><div class="container footer-grid"><div><h3>Clinique Élégance Esthétique</h3><p>Hydra, Alger, Algérie</p><p>+213 555 00 00 00</p><p>contact@elegance-esthetique.dz</p></div><div><h3>Horaires</h3><p>Lundi – Samedi : 09h00 – 18h00</p><p>Dimanche : Fermé</p></div><div><h3>Réseaux sociaux</h3><p><a href="#">Instagram</a></p><p><a href="#">Facebook</a></p></div><div><h3>Légal</h3><p><a href="/mentions-legales.html">Mentions légales</a></p></div></div></footer>
+<script src="/js/booking.js"></script>
+</body>
+</html>
